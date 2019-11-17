@@ -1,0 +1,10 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: auth
+spec:
+  type: ClusterIP
+  selector:
+    app: auth
+  ports:
+    - port: 8080

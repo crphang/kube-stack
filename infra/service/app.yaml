@@ -1,0 +1,10 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: app
+spec:
+  type: ClusterIP
+  selector:
+    app: app
+  ports:
+    - port: 3000
